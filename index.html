@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="content/bootstrap.css">
+	<link rel="stylesheet" type="text/ttf" href="content/font.ttf">
+	<style type="text/css">
+		.img-st {
+			background-image: url(content/ref/1.png);
+		}
+	</style>
+</head>
+<body>
+<!--introduction-->
+	<div style="background: black;" class="container-1">
+		<div class="bg-transparent border border-white col-8 mx-auto h-75 text-white text-center m-3 mt-2">
+			<img class="col-12 mt-3 img-st">
+			<div class="col-12 text-break text-white text-left font-weight-normal">
+				<p class="txt-1">Вы следователь. У вас была семья, но так как вы не уделяли им достаточно времени, они ушли от вас. Проблемы на личном фронте вы объясняете тем, что у вас сложилась прекрасная карьера.</p>
+				<p class="txt-2" style="display: none;">Одним воскресным утром вы сидите и пьете крепкое кофе на грязном кухонном столе. Такие моменты выдаются редко: вот только вчера вы всю ночь гоняли новичков по заданиям, а теперь чуть ли не засыпаете на столе от усталости... пока не услышали репортаж об одном очень старом деле по телевизору:</p>
+				<p class="txt-3" style="display: none;">"...И на этом прекрасном отдаленном острове, летом 201Х года, пропали дети.
+				Почему мы снова вспомнили об этом острове? - На днях, спустя столько лет, там были найдены две новые зацепки."</p>
+				<p class="txt-4" style="display: none;">На телевизоре показали фотографии отпечатка детской ноги и медальона.</p>
+				<p class="txt-5" style="display: none;">"Данные улики нашел родитель одного из пропавших и уже сообщил в полицию, что говорит нам о том, что возможно дело снова возобновят. Мы ждем дальнейших вестей.
+				Далее--"</p>
+				<p class="txt-6" style="display: none;">Вы выключаете телевизор и тут же вам приходит звонок.</p>
+				<p class="txt-7" style="display: none;">За вашими плечами множество решенных расследований, но удастся ли вам решить эту?</p>
+			</div>
+		</div>
+		<button class="btn bg-transparent text-white btn-1">Далее</button>
+		<button class="btn bg-transparent text-white btn-2" style="display: none;">Далее</button>
+		<button class="btn bg-transparent text-white btn-3" style="display: none;">Далее</button>
+		<button class="btn bg-transparent text-white btn-4" style="display: none;">Далее</button>
+		<button class="btn bg-transparent text-white btn-5" style="display: none;">Далее</button>
+		<button class="btn bg-transparent text-white btn-6" style="display: none;">Далее</button>
+		<button class="btn bg-transparent text-white btn-7" style="display: none;">Далее</button>
+	</div>
+
+	<!--Instruction-->
+	<div style="background: black; display: none;" class="container-2 h-75">
+		<div class="bg-transparent border border-white col-8 mx-auto h-75 text-white m-3 mt-2">
+			<h1 class="col-12 mx-auto text-center font-weight-bold">Руководство</h1>
+			<li style="list-style-type: none;" class="col-8 mx-auto text-left mt-5">Как играть в эту игру?</li>
+			<li style="list-style-type: none;" class="col-8 mx-auto text-left mt-2 text-break">В игре 10 вопросов и 4 варианта ответов на них, в зависимости от количества верных ответов зависит ваша концовка.</li>
+			<li style="list-style-type: none;" class="col-8 mx-auto text-left mt-5">Удачи!</li>
+			<button class="btn bg-white text-dark begin mx-auto mt-5">Начнем!</button>
+		</div>
+	</div>
+
+	<!--Game start-->
+	<content style="background-image: url(content/img/interface/); background-size: 100% 100%; display: none;" class="main row">
+		<span class="score"></span>
+		<div class="col-8 m-2 mt-5">
+			<div style="background: black; display: none;" class="box-1 col-12 text-white font-weight-normal text-break">
+				<h1 class="mt-1" style="display: block;">№1</h1>
+				<p classs="mt-2" style="display: block;">Растут ли арбузы на горе?</p>
+				<span class="answer-1 mt-1" style="display: block;">Да.</span>
+				<span class="answer-2 mt-1" style="display: block;">Нет.</span>
+				<span class="answer-3 mt-1" style="display: block;">Оба варианта верны.</span>
+				<span class="answer-4 mt-1" style="display: block;">Оба варианта неверны.</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-2 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№2</h1>
+				<p classs="" style="display: block;">Какой элемент в таблице Менделеева назвали в честь России?</p>
+				<span class="answer-2-1 " style="display: block;">Менделевий</span>
+				<span class="answer-2-2 " style="display: block;">Самарий</span>
+				<span class="answer-2-3 " style="display: block;">Рутений</span>
+				<span class="answer-2-4 " style="display: block;">Все</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-3 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№3 </h1>
+				<p classs="" style="display: block;">На какой строке басового ключа в начале находится нота "Фа"? </p>
+				<span class="answer-3-1 " style="display: block;">На второй.</span>
+				<span class="answer-3-2 " style="display: block;">На первой.</span>
+				<span class="answer-3-3 " style="display: block;">На четвертой.</span>
+				<span class="answer-3-4 " style="display: block;">Между второй и четвертой.</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-4 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№4 </h1>
+				<p classs="" style="display: block;">Какой месяц короче всех? </p>
+				<span class="answer-4-1 " style="display: block;">Апрель.</span>
+				<span class="answer-4-2 " style="display: block;">Ноябрь.</span>
+				<span class="answer-4-3 " style="display: block;">Май.</span>
+				<span class="answer-4-4 " style="display: block;">Февраль.</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-5 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№5 </h1>
+				<p classs="" style="display: block;">Какое число является числом вселенной?</p>
+				<span class="answer-5-1 " style="display: block;">3.14</span>
+				<span class="answer-5-2 " style="display: block;">8</span>
+				<span class="answer-5-3 " style="display: block;">137</span>
+				<span class="answer-5-4 " style="display: block;">42</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-6 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№6 </h1>
+				<p classs="" style="display: block;">Реши: </p>
+				<img src="" class="col-3" style="display: block;">
+				<span class="answer-6-1 " style="display: block;">\ </span>
+				<span class="answer-6-2 " style="display: block;">\ </span>
+				<span class="answer-6-3 " style="display: block;">\ </span>
+				<span class="answer-6-4 " style="display: block;">\ </span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-7 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№7 </h1>
+				<p classs="" style="display: block;">Есть ли сходство между подошвой и вареным мясом?</p>
+				<span class="answer-7-1 " style="display: block;">Да - оба варианта вполне съедобны, а вареное мясо - просто объедение!</span>
+				<span class="answer-7-2 " style="display: block;">Да - оба являются видами готовки мяса.</span>
+				<span class="answer-7-3 " style="display: block;">Да - у человека есть обувь с подошвой и вареное мясо в кастрюле.</span>
+				<span class="answer-7-4 " style="display: block;">Нет!</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-8 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№8</h1>
+				<p classs="" style="display: block;">Что пьют с
+				 лаймом и солью?</p>
+				<span class="answer-8-1 " style="display: block;">Текилу.</span>
+				<span class="answer-8-2 " style="display: block;">Водку.</span>
+				<span class="answer-8-3 " style="display: block;">Абсент.</span>
+				<span class="answer-8-4 " style="display: block;">Квас.</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-9 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№9 </h1>
+				<p classs="" style="display: block;">Утром без кожи, днем без головы, на ужин без ног - кто это?</p>
+				<span class="answer-9-1 " style="display: block;">Младенец.</span>
+				<span class="answer-9-2 " style="display: block;">Креветка.</span>
+				<span class="answer-9-3 " style="display: block;">Рыба.</span>
+				<span class="answer-9-4 " style="display: block;">Парализованный.</span>
+			</div>
+			<div style="background: black; display: none; display: none" class="box-10 text-white font-weight-normal text-break">
+				<h1 class="" style="display: block;">№10 </h1>
+				<p classs="" style="display: block;">Найди лишнее: Мама, Папа, Ты, Я.</p>
+				<span class="answer-10-1 " style="display: block;">Мама.</span>
+				<span class="answer-10-2 " style="display: block;">Папа.</span>
+				<span class="answer-10-3 " style="display: block;">Ты.</span>
+				<span class="answer-10-4 " style="display: block;">Я.</span>
+			</div>
+		</div>
+
+		<img src="content/img/sprites/normal.png" class="Hyoko mt-5 pr-5">
+	</content>
+
+	<!--Ed. normal-->
+	<content class="normal-route" style="display: none;">
+		<div class="bg-transparent border border-white col-8 mx-auto h-75 text-white text-center m-3 mt-2">
+			<img src="content/img/cg/.png" class="col-12 h-75 mt-3 img-norm">
+			<div class="col-12 text-break text-white text-left font-weight-normal">
+				<p class="txt-n-1 text-dark">Проверка нормальной концовки</p>
+			</div>
+		</div>
+		<button class="btn bg-transparent text-white btn-n-1">Далее</button>
+	</content>
+
+	<!--Ed. good-->
+	<content class="good-route" style="display: none;">
+		<div class="bg-transparent border border-white col-8 mx-auto h-75 text-white text-center m-3 mt-2">
+			<img src="content/img/cg/.png" class="col-12 h-75 mt-3 img-good">
+			<div class="col-12 text-break text-white text-left font-weight-normal">
+				<p class="txt-g-1">...</p>
+			</div>
+		</div>
+		<button class="btn bg-transparent text-white btn-g-1">Далее</button>
+	</content>
+
+	<!--Ed. bad-->
+	<content class="bad-route" style="display: none; background-color: black;">
+		<div class="bg-transparent border border-white col-8 mx-auto h-75 text-white text-center m-3 mt-2">
+			<img src="content/img/cg/end/bad_end.png" class="col-12 h-75 mt-3 img-bad">
+			<div class="col-12 text-break text-white text-left font-weight-normal">
+				<p class="txt-b-1">Отдаляясь от команды, вы заходите в пещеру на острове. Она выглядит темной и неглубокой, как кроличья нора; сверху свисают корни деревьев и растений, земля чуть ли не сыплется на вас.</p>
+				<p class="txt-b-2" style="display: none;">Вы вздыхаете с облегчением - пекло солнца окончательно измотало вас. Где-то вдали все еще доносятся беспокойные голоса твоих коллег.</p>
+				<p class="txt-b-3" style="display: none;">Так спокойно...</p>
+				<p class="txt-b-4" style="display: none;">Как же хочется просто взять и отдохнуть...</p>
+				<p class="txt-b-5" style="display: none;">Вы и не замечаете, как засыпаете.</p>
+				<p class="txt-b-6" style="display: none;">...</p>
+				<p class="txt-b-7" style="display: none;">...
+   				....
+   				.....</p>
+				<p class="txt-b-8" style="display: none;">................</p>
+				<p class="txt-b-9" style="display: none;">...Вы еле просыпаетесь, ваш взгляд еще не сфокусировался и единственное что вы видите - размазанные пятна. Судя по всему, уже стемнело и все давно ушли, оставив вас одного. Как непрофессионально.</p>
+				<p class="txt-b-10" style="display: none;">...что? Это что такое?</p>
+				<p class="txt-b-11" style="display: none;">Сверху-вниз, на вас пялится девочка, лет 8-9 - вы прикидываете. Только когда вы встречаетесь с ней взглядом, вы замечаете, что какая-то нечеловеческая сила придавила вас к земле.</p>
+				<p class="txt-b-12" style="display: none;">Вы не можете отвести взгляда от ее глаз.</p>
+				<p class="txt-b-13" style="display: none;">Странно, но такое чувство, словно это ее взгляд держит вас прикованным к земле: невозможно, чтобы такая хилая девчонка обладала такой силой.</p>
+				<p class="txt-b-14" style="display: none;">Она приблизилась к вам лицом.
+				Вы отчаянно пытаетесь вырваться, заорать, но от её взгляда буквально кровь стынет в жилах.</p>
+				<p class="txt-b-15" style="display: none;">Она открывает рот и лишь в последний момент вы обращаете внимание на медальон.</p>
+				<p class="txt-b-16" style="display: none;">"Далее - репортаж с острова.
+				Полиция объявила следователя дела пропавшим без вести. В последний раз его видели днем, на острове.
+				Вдобавок на том же месте была найдена девочка, чью личность так и не удалось установить. Сотрудники предпологают, что она тоже причастна к пропажам на таинственном острове.
+				Далее--"</p>
+				<p class="txt-b-17" style="display: none;">Вы - сотрудник следственного отдела. Вы выключаете телевизор и тут же вам поступает звонок.</p>
+				<p class="txt-b-18" style="display: none;">Дело за вами.</p>
+			</div>
+				<button class="btn-b-1 btn bg-transparent text-white">Далее</button>
+				<button class="btn-b-2 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-3 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-4 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-5 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-6 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-7 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-8 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-9 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-10 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-11 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-12 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-13 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-14 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-15 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-16 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-17 btn bg-transparent text-white" style="display: none;">Далее</button>
+				<button class="btn-b-18 btn bg-transparent text-white" style="display: none;">Далее</button>
+		</div>
+
+	</content>
+	
+	<script type="text/javascript">
+		//in-game
+		let score = 0;
+		let sum = document.querySelector('.score');
+		let sprite_n = document.querySelector('.Hyoko');
+
+		//plot
+		let img = document.querySelector('.img-st');
+		let txt1 = document.querySelector('.txt-1');
+		let txt2 = document.querySelector('.txt-2');
+		let txt3 = document.querySelector('.txt-3');
+		let txt4 = document.querySelector('.txt-4');
+		let txt5 = document.querySelector('.txt-5');
+		let txt6 = document.querySelector('.txt-6');
+		let txt7 = document.querySelector('.txt-7');
+		let btn1 = document.querySelector('.btn-1');
+		let btn2 = document.querySelector('.btn-2');
+		let btn3 = document.querySelector('.btn-3');
+		let btn4 = document.querySelector('.btn-4');
+		let btn5 = document.querySelector('.btn-5');
+		let btn6 = document.querySelector('.btn-6');
+		let btn7 = document.querySelector('.btn-7');
+		let cont1 = document.querySelector('.container-1');
+		let cont2 = document.querySelector('.container-2');
+		let main = document.querySelector('.main');
+		let btn_b = document.querySelector('.begin');
+
+		//route-normal
+		let route_n = document.querySelector('.normal-route');
+		let img_n = document.querySelector('.img-norm');
+		let txt_n1 = document.querySelector('.txt-n-1');
+		let btn_n1 = document.querySelector('.btn-n-1');
+		//route-good
+		let route_g = document.querySelector('.good-route');
+		let img_g = document.querySelector('.img-good');
+		let txt_g1 = document.querySelector('.txt-g-1');
+		let btn_g1 = document.querySelector('.btn-g-1');
+		//route-bad
+		let route_b = document.querySelector('.bad-route');
+		let img_b = document.querySelector('.img-bad');
+		let txt_b1 = document.querySelector('.txt-b-1');
+		let txt_b2 = document.querySelector('.txt-b-2');
+		let txt_b3 = document.querySelector('.txt-b-3');
+		let txt_b4 = document.querySelector('.txt-b-4');
+		let txt_b5 = document.querySelector('.txt-b-5');
+		let txt_b6 = document.querySelector('.txt-b-6');
+		let txt_b7 = document.querySelector('.txt-b-7');
+		let txt_b8 = document.querySelector('.txt-b-8');
+		let txt_b9 = document.querySelector('.txt-b-9');
+		let txt_b10 = document.querySelector('.txt-b-10');
+		let txt_b11 = document.querySelector('.txt-b-11');
+		let txt_b12 = document.querySelector('.txt-b-12');
+		let txt_b13 = document.querySelector('.txt-b-13');
+		let txt_b14 = document.querySelector('.txt-b-14');
+		let txt_b15 = document.querySelector('.txt-b-15');
+		let txt_b16 = document.querySelector('.txt-b-16');
+		let txt_b17 = document.querySelector('.txt-b-17');
+		let txt_b18 = document.querySelector('.txt-b-18');
+		let btn_b1 = document.querySelector('.btn-b-1');
+		let btn_b2 = document.querySelector('.btn-b-2');
+		let btn_b3 = document.querySelector('.btn-b-3');
+		let btn_b4 = document.querySelector('.btn-b-4');
+		let btn_b5 = document.querySelector('.btn-b-5');
+		let btn_b6 = document.querySelector('.btn-b-6');
+		let btn_b7 = document.querySelector('.btn-b-7');
+		let btn_b8 = document.querySelector('.btn-b-8');
+		let btn_b9 = document.querySelector('.btn-b-9');
+		let btn_b10 = document.querySelector('.btn-b-10');
+		let btn_b11 = document.querySelector('.btn-b-11');
+		let btn_b12 = document.querySelector('.btn-b-12');
+		let btn_b13 = document.querySelector('.btn-b-13');
+		let btn_b14 = document.querySelector('.btn-b-14');
+		let btn_b15 = document.querySelector('.btn-b-15');
+		let btn_b16 = document.querySelector('.btn-b-16');
+		let btn_b17 = document.querySelector('.btn-b-17');
+		let btn_b18 = document.querySelector('.btn-b-18');
+
+		//question containers
+		let box_1 = document.querySelector('.box-1');
+		let box_2 = document.querySelector('.box-2');
+		let box_3 = document.querySelector('.box-3');
+		let box_4 = document.querySelector('.box-4');
+		let box_5 = document.querySelector('.box-5');
+		let box_6 = document.querySelector('.box-6');
+		let box_7 = document.querySelector('.box-7');
+		let box_8 = document.querySelector('.box-8');
+		let box_9 = document.querySelector('.box-9');
+		let box_10 = document.querySelector('.box-10');
+		//questions 1 section
+		let a_1 = document.querySelector('.answer-1');
+		let a_2 = document.querySelector('.answer-2');
+		let a_3 = document.querySelector('.answer-3');
+		let a_4 = document.querySelector('.answer-4');
+		//questions 2 section
+		let a_2_1 = document.querySelector('.answer-2-1');
+		let a_2_2 = document.querySelector('.answer-2-2');
+		let a_2_3 = document.querySelector('.answer-2-3');
+		let a_2_4 = document.querySelector('.answer-2-4');
+		//questions 3 section
+		let a_3_1 = document.querySelector('.answer-3-1');
+		let a_3_2 = document.querySelector('.answer-3-2');
+		let a_3_3 = document.querySelector('.answer-3-3');
+		let a_3_4 = document.querySelector('.answer-3-4');
+		//questions 4 section
+		let a_4_1 = document.querySelector('.answer-4-1');
+		let a_4_2 = document.querySelector('.answer-4-2');
+		let a_4_3 = document.querySelector('.answer-4-3');
+		let a_4_4 = document.querySelector('.answer-4-4');
+		//questions 5 section
+		let a_5_1 = document.querySelector('.answer-5-1');
+		let a_5_2 = document.querySelector('.answer-5-2');
+		let a_5_3 = document.querySelector('.answer-5-3');
+		let a_5_4 = document.querySelector('.answer-5-4');
+		//questions 6 section
+		let a_6_1 = document.querySelector('.answer-6-1');
+		let a_6_2 = document.querySelector('.answer-6-2');
+		let a_6_3 = document.querySelector('.answer-6-3');
+		let a_6_4 = document.querySelector('.answer-6-4');
+		//questions 7 section
+		let a_7_1 = document.querySelector('.answer-7-1');
+		let a_7_2 = document.querySelector('.answer-7-2');
+		let a_7_3 = document.querySelector('.answer-7-3');
+		let a_7_4 = document.querySelector('.answer-7-4');
+		//questions 8 section
+		let a_8_1 = document.querySelector('.answer-8-1');
+		let a_8_2 = document.querySelector('.answer-8-2');
+		let a_8_3 = document.querySelector('.answer-8-3');
+		let a_8_4 = document.querySelector('.answer-8-4');
+		//questions 9 section
+		let a_9_1 = document.querySelector('.answer-9-1');
+		let a_9_2 = document.querySelector('.answer-9-2');
+		let a_9_3 = document.querySelector('.answer-9-3');
+		let a_9_4 = document.querySelector('.answer-9-4');
+		//questions 10 section
+		let a_10_1 = document.querySelector('.answer-10-1');
+		let a_10_2 = document.querySelector('.answer-10-2');
+		let a_10_3 = document.querySelector('.answer-10-3');
+		let a_10_4 = document.querySelector('.answer-10-4');
+
+		img.style.backgroundImage = 'url(content/ref/1.png)';
+
+		btn1.onclick = function() {
+			txt1.style.display = 'none';
+			txt2.style.display = 'block';
+			btn1.style.display = 'none';
+			btn2.style.display = 'block';
+			img.style.backgroundImage = 'url(content/img/cg/table.png)';
+		}
+		btn2.onclick = function() {
+			txt2.style.display = 'none';
+			txt3.style.display = 'block';
+			btn2.style.display = 'none';
+			btn3.style.display = 'block';
+		}
+		btn3.onclick = function() {
+			txt3.style.display = 'none';
+			txt4.style.display = 'block';
+			btn3.style.display = 'none';
+			btn4.style.display = 'block';
+		}
+		btn4.onclick = function() {
+			txt4.style.display = 'none';
+			txt5.style.display = 'block';
+			btn4.style.display = 'none';
+			btn5.style.display = 'block';
+		}
+		btn5.onclick = function() {
+			txt5.style.display = 'none';
+			txt6.style.display = 'block';
+			btn5.style.display = 'none';
+			btn6.style.display = 'block';
+		}
+		btn6.onclick = function() {
+			txt6.style.display = 'none';
+			txt7.style.display = 'block';
+			txt7.style.textAlign = 'center';
+			btn6.style.display = 'none';
+			btn7.style.display = 'block';
+		}
+		btn7.onclick = function() {
+			cont1.style.display = 'none';
+			cont2.style.display = 'block';
+		}
+		
+		btn_b.onclick = function() {
+			cont2.style.display = 'none';
+			main.style.display = 'block';
+			box_1.style.display = 'block';
+
+		}
+
+		//questions section 1
+		a_1.onclick = function() {
+			box_1.style.display = 'none';
+			box_2.style.display = 'block';
+		}
+		a_2.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_1.style.display = 'none';
+			box_2.style.display = 'block';
+		}
+		a_3.onclick = function() {
+			box_1.style.display = 'none';
+			box_2.style.display = 'block';
+		}
+		a_4.onclick = function() {
+			box_1.style.display = 'none';
+			box_2.style.display = 'block';
+		}
+		//questions section 2
+		a_2_1.onclick = function() {
+			box_2.style.display = 'none';
+			box_3.style.display = 'block';
+		}
+		a_2_2.onclick = function() {
+			box_2.style.display = 'none';
+			box_3.style.display = 'block';
+		}
+		a_2_3.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_2.style.display = 'none';
+			box_3.style.display = 'block';
+		}
+		a_2_4.onclick = function() {
+			box_2.style.display = 'none';
+			box_3.style.display = 'block';
+		}
+		//questions 3 section 
+		a_3_1.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_3.style.display = 'none';
+			box_4.style.display = 'block';
+		}
+		a_3_2.onclick = function() {
+			box_3.style.display = 'none';
+			box_4.style.display = 'block';
+		}
+		a_3_3.onclick = function() {
+			box_3.style.display = 'none';
+			box_4.style.display = 'block';
+		}
+		a_3_4.onclick = function() {
+			box_3.style.display = 'none';
+			box_4.style.display = 'block';
+		}
+		//questions 4 section 
+		a_4_1.onclick = function() {
+			box_4.style.display = 'none';
+			box_5.style.display = 'block';
+		}
+		a_4_2.onclick = function() {
+			box_4.style.display = 'none';
+			box_5.style.display = 'block';
+		}
+		a_4_3.onclick = function() {
+			box_4.style.display = 'none';
+			box_5.style.display = 'block';
+		}
+		a_4_4.onclick = function() {
+			box_4.style.display = 'none';
+			box_5.style.display = 'block';
+		}
+		//questions 5 section 
+		a_5_1.onclick = function() {
+			box_5.style.display = 'none';
+			box_6.style.display = 'block';
+		}
+		a_5_2.onclick = function() {
+			box_5.style.display = 'none';
+			box_6.style.display = 'block';
+		}
+		a_5_3.onclick = function() {
+			box_5.style.display = 'none';
+			box_6.style.display = 'block';
+		}
+		a_5_4.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_5.style.display = 'none';
+			box_6.style.display = 'block';
+		}
+		//questions 6 section 
+		a_6_1.onclick = function() {
+			box_6.style.display = 'none';
+			box_7.style.display = 'block';
+		}
+		a_6_2.onclick = function() {
+			box_6.style.display = 'none';
+			box_7.style.display = 'block';
+		}
+		a_6_3.onclick = function() {
+			box_6.style.display = 'none';
+			box_7.style.display = 'block';
+		}
+		a_6_4.onclick = function() {
+			box_6.style.display = 'none';
+			box_7.style.display = 'block';
+		}
+		//questions 7 section 
+		a_7_1.onclick = function() {
+			box_7.style.display = 'none';
+			box_8.style.display = 'block';
+		}
+		a_7_2.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_7.style.display = 'none';
+			box_8.style.display = 'block';
+		}
+		a_7_3.onclick = function() {
+			box_7.style.display = 'none';
+			box_8.style.display = 'block';
+		}
+		a_7_4.onclick = function() {
+			box_7.style.display = 'none';
+			box_8.style.display = 'block';
+		}
+		//questions 8 section 
+		a_8_1.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_8.style.display = 'none';
+			box_9.style.display = 'block';
+		}
+		a_8_2.onclick = function() {
+			box_8.style.display = 'none';
+			box_9.style.display = 'block';
+		}
+		a_8_3.onclick = function() {
+			box_8.style.display = 'none';
+			box_9.style.display = 'block';
+		}
+		a_8_4.onclick = function() {
+			box_8.style.display = 'none';
+			box_9.style.display = 'block';
+			/*if(score>=4) {
+				sprite_n.img.src = 'url(standing.png)';
+			} */
+		}
+		//questions 9 section 
+		a_9_1.onclick = function() {
+			box_9.style.display = 'none';
+			box_10.style.display = 'block';
+		}
+		a_9_2.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_9.style.display = 'none';
+			box_10.style.display = 'block';
+		}
+		a_9_3.onclick = function() {
+			box_9.style.display = 'none';
+			box_10.style.display = 'block';
+		}
+		a_9_4.onclick = function() {
+			box_9.style.display = 'none';
+			box_10.style.display = 'block';
+			/*if(score>=4) {
+				sprite_n.img.src = 'none';
+			} */
+		}
+		//questions 10 section 
+		a_10_1.onclick = function() {
+			box_10.style.display = 'none';
+			if(score==5||score==6||score==7) {
+				route_n.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+			if(score==8||score==9||score==10) {
+				route_g.style.display = 'block';
+			}
+			if(score==0||score==1||score==2||score==3||score==4) {
+				route_b.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+		}
+		a_10_2.onclick = function() {
+			box_10.style.display = 'none';
+			if(score==5||score==6||score==7) {
+				route_n.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+			if(score==8||score==9||score==10) {
+				route_g.style.display = 'block';
+			}
+			if(score==0||score==1||score==2||score==3||score==4) {
+				route_b.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+
+		}
+		a_10_3.onclick = function() {
+			box_10.style.display = 'none';
+			if(score==5||score==6||score==7) {
+				route_n.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+			if(score==8||score==9||score==10) {
+				route_g.style.display = 'block';
+			}
+			if(score==0||score==1||score==2||score==3||score==4) {
+				route_b.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+		}
+		a_10_4.onclick = function() {
+			score = score + 1;
+			sum = score;
+			box_10.style.display = 'none';
+			if(score==5||score==6||score==7) {
+				route_n.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+			if(score==8||score==9||score==10) {
+				route_g.style.display = 'block';
+			}
+			if(score==0||score==1||score==2||score==3||score==4) {
+				route_b.style.display = 'block';
+				main.style.display = 'none';
+				sprite_n.style.display = 'none';
+			}
+		}
+
+		//BAD END ROUTE
+		btn_b1.onclick = function() {
+			txt_b1.style.display = 'none';
+			txt_b2.style.display = 'block';
+			btn_b1.style.display = 'none';
+			btn_b2.style.display = 'block';
+		}
+
+		btn_b2.onclick = function() {
+			txt_b2.style.display = 'none';
+			txt_b3.style.display = 'block';
+			btn_b2.style.display = 'none';
+			btn_b3.style.display = 'block';
+		}
+
+		btn_b3.onclick = function() {
+			txt_b3.style.display = 'none';
+			txt_b4.style.display = 'block';
+			btn_b3.style.display = 'none';
+			btn_b4.style.display = 'block';
+		}
+
+		btn_b4.onclick = function() {
+			txt_b4.style.display = 'none';
+			txt_b5.style.display = 'block';
+			btn_b4.style.display = 'none';
+			btn_b5.style.display = 'block';
+		}
+
+		btn_b5.onclick = function() {
+			txt_b5.style.display = 'none';
+			txt_b6.style.display = 'block';
+			btn_b5.style.display = 'none';
+			btn_b6.style.display = 'block';
+		}
+
+		btn_b6.onclick = function() {
+			txt_b6.style.display = 'none';
+			txt_b7.style.display = 'block';
+			btn_b6.style.display = 'none';
+			btn_b7.style.display = 'block';
+		}
+
+		btn_b7.onclick = function() {
+			txt_b7.style.display = 'none';
+			txt_b8.style.display = 'block';
+			btn_b7.style.display = 'none';
+			btn_b8.style.display = 'block';
+		}
+
+		btn_b8.onclick = function() {
+			txt_b8.style.display = 'none';
+			txt_b9.style.display = 'block';
+			btn_b8.style.display = 'none';
+			btn_b9.style.display = 'block';
+		}
+
+		btn_b9.onclick = function() {
+			txt_b9.style.display = 'none';
+			txt_b10.style.display = 'block';
+			btn_b9.style.display = 'none';
+			btn_b10.style.display = 'block';
+		}
+
+		btn_b10.onclick = function() {
+			txt_b10.style.display = 'none';
+			txt_b11.style.display = 'block';
+			btn_b10.style.display = 'none';
+			btn_b11.style.display = 'block';
+		}
+
+		btn_b11.onclick = function() {
+			txt_b11.style.display = 'none';
+			txt_b12.style.display = 'block';
+			btn_b11.style.display = 'none';
+			btn_b12.style.display = 'block';
+		}
+
+		btn_b12.onclick = function() {
+			txt_b12.style.display = 'none';
+			txt_b13.style.display = 'block';
+			btn_b12.style.display = 'none';
+			btn_b13.style.display = 'block';
+		}
+
+		btn_b13.onclick = function() {
+			txt_b13.style.display = 'none';
+			txt_b14.style.display = 'block';
+			btn_b13.style.display = 'none';
+			btn_b14.style.display = 'block';
+		}
+
+		btn_b14.onclick = function() {
+			txt_b14.style.display = 'none';
+			txt_b15.style.display = 'block';
+			btn_b14.style.display = 'none';
+			btn_b15.style.display = 'block';
+		}
+
+		btn_b15.onclick = function() {
+			txt_b15.style.display = 'none';
+			txt_b16.style.display = 'block';
+			btn_b15.style.display = 'none';
+			btn_b16.style.display = 'block';
+		}
+
+		btn_b16.onclick = function() {
+			txt_b16.style.display = 'none';
+			txt_b17.style.display = 'block';
+			btn_b16.style.display = 'none';
+			btn_b17.style.display = 'block';
+		}
+
+		btn_b17.onclick = function() {
+			txt_b17.style.display = 'none';
+			txt_b18.style.display = 'block';
+			btn_b17.style.display = 'none';
+			btn_b18.style.display = 'block';
+		}
+		
+
+
+			</script>
+</body>
+</html>
